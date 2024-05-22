@@ -1,0 +1,74 @@
+/* color palette - https://colorhunt.co/palette/222831393e4600adb5eeeeee */
+/* use if proper only */
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+    border: 0;
+}
+body {
+    background-color: #222831;
+    color: white;
+    margin: 0;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header ul {
+    display: flex;
+    list-style: none;
+    padding: 1.2rem;
+    margin: 0.5rem;
+}
+.header ul li {
+    padding: 0 1.2rem;
+}
+.header ul li a {
+    text-decoration: none;
+    color: white;
+}
+.header img {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+.heading {
+    text-align: center;
+}
+.flag {
+    text-align: center;
+}
+.flag img {
+    max-width: 80%;
+}
+.countryDescription {
+    text-align: left;
+    margin: 0.8rem;
+}
+.countryDescription p span {
+    font-weight: bold;
+}
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next button {
+    width: 38%;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: 0.4rem;
+    background-color: #393E46;
+    color: white;
+    border-radius: 0;
+}
+
+/* HOVER STATES */
+
+.next button:active {
+    background-color: #EEEEEE;
+    color: black;
+}

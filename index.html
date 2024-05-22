@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Guess The Flag</title>
+</head>
+
+<body>
+
+    <div class="heading">
+        <!-- This section holds the text of the main heading -->
+        <h1 id="headingText">COUNTRY VIA FLAG</h1>
+    </div>
+    <div class="getStarted">
+        <!-- This section holds an introduction to the site and the "Start" button -->
+        <div class="introduction">
+            <p>GeoMap Finder offers an intuitive platform to explore detailed geographic information about countries and
+                provinces. Dive into local names, administrative divisions, and ISO codes with ease. Whether you're a
+                geography enthusiast or conducting research, GeoMap Finder provides precise data for your exploration
+                needs.</p>
+        </div>
+        <div class="start">
+            <button onclick="question()">Start! &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <div class="flag">
+        <!-- This section is where the flag will spawn when called from the Flagpedia CDN -->
+    </div>
+    <div class="options">
+        <!-- This section includes the 4 answer options, the "Show Answer" button and the "Skip Flag" button -->
+        <div class="answers">
+            <button id="1" onclick="checkAnswer(this.id)">Answer 1</button>
+            <button id="2" onclick="checkAnswer(this.id)">Answer 2</button>
+            <button id="3" onclick="checkAnswer(this.id)">Answer 3</button>
+            <button id="4" onclick="checkAnswer(this.id)">Answer 4</button>
+        </div>
+        <div class="otherOptions">
+            <button id="showAnswer" onclick="showAnswer()">Show Answer &nbsp; <i class="fa-solid fa-eye"></i></button>
+            <button id="skip" onclick="next()">Skip Flag &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <div class="countryInformation">
+        <!-- This section includes information about the country whose flag is currently displayed -->
+        <p>This is <span id="countryName">Country Name</span></p>
+        <p>Embark on a journey around the globe with GeoGuessr! This interactive game challenges you to identify
+            locations based on clues provided by the surrounding geography. Use your knowledge of landscapes, landmarks,
+            and cultural cues to make educated guesses and discover fascinating destinations.</p>
+    </div>
+    <div class="next">
+        <button id="nextFlag" onclick="next()">Next Flag &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div class="globe">
+        <!-- This section holds the globe that is rendered at the bottom of the page when the site is loaded for the first time or refreshed -->
+        <img src="img/globe-small.png" alt="Flags" id="globe-small">
+        <img src="img/globe-medium.png" alt="Flags" id="globe-medium">
+    </div>
+    <!-- JavaScript hook -->
+    <script src="script.js"></script>
+</body>
+
+</html>

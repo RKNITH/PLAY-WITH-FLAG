@@ -1,0 +1,86 @@
+/* color palette - https://colorhunt.co/palette/222831393e4600adb5eeeeee */
+/* use if proper only */
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+    border: 0;
+}
+body {
+    background-color: #222831;
+    color: white;
+    margin: 0;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header ul {
+    display: flex;
+    list-style: none;
+    padding: 1.2rem;
+    margin: 0.5rem;
+}
+.header ul li {
+    padding: 0 1.2rem;
+}
+.header ul li a {
+    text-decoration: none;
+    color: white;
+}
+.header img {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+.heading {
+    text-align: center;
+}
+.flag {
+    text-align: center;
+}
+.flag img {
+    max-width: 80%;
+}
+.answers {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.answers button {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    background-color: #393E46;
+    color: white;
+    border-radius: 0;
+}
+.otherOptions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.otherOptions button {
+    width: 38%;
+    font-size: 0.65rem;
+    padding: 0.5rem;
+    margin: 0.4rem;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 0;
+}
+
+/* HOVER STATES */
+
+.answers button:active {
+    background-color: #EEEEEE;
+    color: black;
+}
+.otherOptions button:active {
+    background-color: #393E46;
+    color: white;
+}

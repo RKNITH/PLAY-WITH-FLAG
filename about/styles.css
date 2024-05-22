@@ -1,0 +1,82 @@
+/* color palette - https://colorhunt.co/palette/222831393e4600adb5eeeeee */
+/* use if proper only */
+
+* {
+    font-family: 'Inter';
+}
+body {
+    background-color: #06283D;
+    color: white;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+button {
+    border: 0;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header ul {
+    display: flex;
+    list-style: none;
+    padding: 1.2rem;
+    margin: 0.5rem;
+}
+.header ul li {
+    padding: 0 1.2rem;
+}
+.header ul li a {
+    text-decoration: none;
+    color: white;
+}
+.header i {
+    /* width: 30px;
+    height: auto; */
+    margin-left: 30px;
+    font-size: 1.5rem;
+}
+#websiteLogo {
+    width: 30px;
+    text-decoration: none;
+    color: white;
+}
+.heading {
+    text-align: center;
+}
+.introduction {
+    text-align: left;
+    margin: 1.8rem;
+}
+.globe img {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+#globe-medium {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1000px) {
+    .introduction {
+        margin: 3.2rem;
+    }
+    .globe img {
+        opacity: 0.5;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #globe-small {
+        display: none;
+    }
+    #globe-medium {
+        position: absolute;
+        display: block;
+    }
+}

@@ -1,0 +1,186 @@
+/* color palette - https://colorhunt.co/palette/222831393e4600adb5eeeeee */
+/* use if proper only */
+
+* {
+    font-family: 'Inter';
+}
+body {
+    background-color: #06283D;
+    color: white;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+button {
+    border: 0;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header ul {
+    display: flex;
+    list-style: none;
+    padding: 1.2rem;
+    margin: 0.5rem;
+}
+.header ul li {
+    padding: 0 1.2rem;
+}
+.header ul li a {
+    text-decoration: none;
+    color: white;
+}
+.header i {
+    /* width: 30px;
+    height: auto; */
+    margin-left: 30px;
+    font-size: 1.5rem;
+}
+#websiteLogo {
+    width: 30px;
+    text-decoration: none;
+    color: white;
+}
+.heading {
+    text-align: center;
+}
+.flag {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+    /* text-align: center; */
+    /* text-align is not really necessary */
+    height: 192px;
+    width: 100vw;
+    display: none;
+}
+.flag img {
+    width: 80%;
+}
+.countryInformation {
+    display: none;
+    text-align: left;
+    margin: 0.8rem;
+}
+.countryInformation p span {
+    font-weight: bold;
+}
+.introduction {
+    text-align: left;
+    margin: 1.8rem;
+}
+.start {
+    text-align: center;
+}
+.start button {
+    font-size: 1rem;
+    padding: 0.8rem;
+    background-color: #256D85;
+    color: white;
+    border: 0;
+    border-radius: 0;
+}
+.start button a {
+    text-decoration: none;
+    color: white;
+}
+.options {
+    display: none;
+}
+.answers {
+    position: relative;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.answers button {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    background-color: #256D85;
+    color: white;
+    border-radius: 0;
+}
+.otherOptions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.otherOptions button {
+    width: 38%;
+    font-size: 0.65rem;
+    padding: 0.5rem;
+    margin: 0.4rem;
+    background-color: #DFF6FF;
+    color: black;
+    border-radius: 0;
+}
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.next button {
+    width: 38%;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: 0.4rem;
+    background-color: #256D85;
+    color: white;
+    border-radius: 0;
+}
+.globe img {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+#globe-medium {
+    display: none;
+}
+
+/* HOVER STATES */
+
+.start button:active {
+    background-color: #DFF6FF;
+    color: #000;
+}
+.answers button:active {
+    background-color: #DFF6FF;
+    color: black;
+}
+.otherOptions button:active {
+    background-color: #256D85;
+    color: white;
+}
+.next button:active {
+    background-color: #DFF6FF;
+    color: black;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1000px) {
+    .introduction {
+        margin: 3.2rem;
+    }
+    .globe img {
+        opacity: 0.5;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #globe-small {
+        display: none;
+    }
+    #globe-medium {
+        position: absolute;
+        display: block;
+    }
+}
